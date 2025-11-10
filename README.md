@@ -3,6 +3,9 @@
 
 Historically, setting a custom MAC address on Android was very easy for rooted users. Starting with Android 12, however, Google's implementation of MAC address randomization has made it impossible, as the MAC address is always changed when the network state is altered. If you have encountered this problem, then you need Libresposed! Libresposed is an Xposed module based on MACsposed before it went proprietary (1.2.0+) that blocks the MAC address randomizer on Android 12 through 14 and allows you to once again make use of your favorite tools for setting your MAC address. Simply install Libresposed, enable it, and go back to randomizing your MAC address using your favorite tools for doing so!
 
+Libresposed will [always be free software](https://www.gnu.org/philosophy/free-sw.html) and will not require a weird 10$ lifetime license (or the subscription flavors ranging from 1$ to 5$) to unlock its functionality unlike MACsposed where it went the proprietary route starting in 1.2.0.
+
+
 **⚠️ WARNING:** Libresposed is intended for rooted devices running Android 12 through 14 and requires Xposed. The required Xposed variant to use is LSPosed. Other Xposed variants will not work. Additionally, this module cannot be guaranteed to work on all devices. In the worst case, it can cause a bootloop. Use at your own risk.
 
 <p align="center">
