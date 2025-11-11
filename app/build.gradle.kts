@@ -62,4 +62,5 @@ dependencies {
     implementation(libs.markdownview)
     implementation(libs.libxposed.service)
     compileOnly(libs.libxposed.api)
+    implementation(libs.libsu.core)
 }

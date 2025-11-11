@@ -9,10 +9,12 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import com.mukesh.MarkDown
 import java.io.File
+import com.berdik.macsposed.utils.RootPermissionRequester
 
 class InstructionsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        RootPermissionRequester.requestRootAccess()
         setContentView(R.layout.activity_instructions)
 
         // Create a temporary file copy of the embedded instructions markdown file.

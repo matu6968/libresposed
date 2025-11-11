@@ -1,0 +1,30 @@
+diff --git a/interface/build.gradle.kts b/interface/build.gradle.kts
+index a2d4139..67d6000 100644
+--- a/interface/build.gradle.kts
++++ b/interface/build.gradle.kts
+@@ -20,8 +20,8 @@ android {
+     }
+ 
+     compileOptions {
+-        targetCompatibility = JavaVersion.VERSION_21
+-        sourceCompatibility = JavaVersion.VERSION_21
++        targetCompatibility = JavaVersion.VERSION_17
++        sourceCompatibility = JavaVersion.VERSION_17
+     }
+ 
+     publishing {
+diff --git a/service/build.gradle.kts b/service/build.gradle.kts
+index d9456ee..c764f08 100644
+--- a/service/build.gradle.kts
++++ b/service/build.gradle.kts
+@@ -19,8 +19,8 @@ android {
+     }
+ 
+     compileOptions {
+-        sourceCompatibility = JavaVersion.VERSION_21
+-        targetCompatibility = JavaVersion.VERSION_21
++        sourceCompatibility = JavaVersion.VERSION_17
++        targetCompatibility = JavaVersion.VERSION_17
+     }
+ 
+     publishing {

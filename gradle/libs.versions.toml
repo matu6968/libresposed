@@ -1,11 +1,12 @@
 [versions]
 agp = "8.1.2"
 kotlin = "1.9.10"
-xposed-api = "100"
+xposed-api = "e2588ee"
 xposed-service = "100-1.0.0"
 appcompat = "1.6.1"
 constraintlayout = "2.1.4"
 markdownview = "2.0.0"
+libsu = "6.0.0"
 
 [plugins]
 agp-app = { id = "com.android.application", version.ref = "agp" }
@@ -17,3 +18,4 @@ constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayo
 markdownview = { group = "com.github.mukeshsolanki", name = "MarkdownView-Android", version.ref = "markdownview" }
 libxposed-api = { group = "io.github.libxposed", name = "api", version.ref = "xposed-api" }
 libxposed-service = { group = "io.github.libxposed", name = "service", version.ref = "xposed-service" }
+libsu-core = { group = "com.github.topjohnwu.libsu", name = "core", version.ref = "libsu" }

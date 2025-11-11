@@ -43,3 +43,40 @@ To use Libresposed:
   <img src="play-store-images/screenshots/5.png" width="300" />
   <img src="play-store-images/screenshots/6.png" width="300" />
 </p>
+
+## Building
+
+To build the app, you need to have the following tools installed:
+
+- Android Studio
+- Gradle
+- JDK 17
+
+Then, you can build the app by running the following command:
+
+Due to libxposed not being available on Maven Central, you need to build first the libxposed library and then publish it to your local Maven repository.
+
+Either by running the following script:
+
+```bash
+./setup-libxposed.sh
+```
+
+Or manually by running the following commands:
+
+```bash
+git clone https://github.com/libxposed/api.git
+git clone https://github.com/libxposed/service.git
+cd api
+./gradlew :api:publishApiPublicationToMavenLocal
+cd ../service
+# You need to apply a patch to the service project to prevent failures when building the app
+git apply ../patch-java-requirement.patch
+./gradlew :service:publishServicePublicationToMavenLocal
+```
+
+Then, you can build the app by running the following command:
+
+```bash
+./gradlew build
+```
